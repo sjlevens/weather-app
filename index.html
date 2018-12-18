@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Sam's Weather App</title>
 </head>
 <body>
-    <h1>Weather</h1>
+    <div class="wrapper clearfix">
+        <div class="loading-panel">
+            <div class="loading icon">
+                <img src="">
+            </div>
+        </div>
+
+        <div class="weather-panel">
+            <div class="city">Sydney</div>
+            <div class="time">time</div>
+            <div class="condition-panel">
+                <img src="http://cdn.apixu.com/weather/64x64/day/116.png" alt="Current Weather" class="condition-img">
+                <div class="condition">Condition Text</div>               
+            </div>
+            <div class="temp-panel">
+                <div class="temp-real-label">Real Temp</div>
+                <div class="temp-real">00C</div>
+                <div class="temp-feel-label">Feel Temp</div>
+                <div class="temp-feel">01C</div>
+            </div>
+            <div class="wind-panel">
+                <div class="wind-speed-label">Wind Speed</div>
+                <div class="wind-speed">00KMH</div>
+                <div class="wind-direction-label">Wind Direction</div>
+                <div class="wind-direction">00N</div>
+            </div>
+        </div>
+    </div>
     <script src = 'wapp.js'></script>
 </body>
 </html>

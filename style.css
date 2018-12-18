@@ -1,0 +1,49 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    color: #555;
+    font-family: Open Sans;
+    font-size: 32px;
+    position: relative;
+    height: 100vh;
+    font-weight: 400;
+}
+
+.weather-panel{
+    position: relative;
+    width: 800px;
+    background-color: #7FFFD4;
+    text-align: center;
+    margin: 25px;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.city{
+    font-size:40px;
+    padding:10px;
+}
+.time{
+    font-size: 16px;
+    padding: 10px;
+}
+
+.condition-panel{
+    position: absolute;
+    top: 30%;
+    width: 150px;
+    height: 150px;
+    font-size: 24px;
+}
